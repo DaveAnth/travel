@@ -1,0 +1,9 @@
+version : "1"
+services: 
+  devapp:
+    build: .
+    ports:
+      - "8000:4200"
+    volumnes:
+      - "/app/node_modules"
+      - ".:/app"
